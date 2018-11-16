@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="draw()">
+<canvas id="sketch" width="300" height="300">
+</canvas>
+
+<script type="text/javascript">
+
+function draw()
+{
+  var rad = parseInt(prompt('enter a radius'))
+  var color = prompt('enter a color')
+    var sketch = document.getElementById('sketch');
+    var context = sketch.getContext("2d");
+    context.fillStyle = color;
+    context.beginPath();
+    context.arc(120, 60, rad, 0, 2 * Math.PI, true);
+    context.closePath();
+    context.fill();
+
+        //this function draws}
+      }
+  </script>
+  </body>
+</html>
